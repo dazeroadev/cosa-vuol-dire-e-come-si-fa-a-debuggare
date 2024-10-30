@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Debug</title>
+</head>
+<body>
+		<h1>Debuggare</h1>
+		<p>Apri la console del browser per vedere i risultati 👇🏻</p>
+		<script>
+			let name = "Mario";
+			console.log("Il contenuto della variabile name è", name);
+			let age = -1;
+			if(age<0) {
+				console.error("Age è minore di 0, error")
+			}
+			let temperature = 35;
+			if(temperature>30) {
+				console.warn("attenzione, la temperatura è troppo alta")
+			}
+			let users = [
+				{ id: 1, name: "Mario", age: 30 },
+				{ id: 2, name: "Luca", age: 25 },
+				{ id: 3, name: "Giulia", age: 28 }
+			];
+			console.table(users);
+			console.log(users);
+		</script>
+</body>
+</html>
